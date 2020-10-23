@@ -15,6 +15,9 @@
 		031E15ED25431B6D00D65B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031E15EB25431B6D00D65B62 /* LaunchScreen.storyboard */; };
 		031E15F825431B6D00D65B62 /* Login_Attempt_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E15F725431B6D00D65B62 /* Login_Attempt_2Tests.swift */; };
 		031E160325431B6D00D65B62 /* Login_Attempt_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E160225431B6D00D65B62 /* Login_Attempt_2UITests.swift */; };
+		031E161425431B7C00D65B62 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161325431B7C00D65B62 /* LoginScreenViewController.swift */; };
+		031E161925431B9500D65B62 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161825431B9500D65B62 /* RegisterScreenViewController.swift */; };
+		031E161E25431BA000D65B62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161D25431BA000D65B62 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		031E15FE25431B6D00D65B62 /* Login-Attempt-2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login-Attempt-2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		031E160225431B6D00D65B62 /* Login_Attempt_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Attempt_2UITests.swift; sourceTree = "<group>"; };
 		031E160425431B6D00D65B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031E161325431B7C00D65B62 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		031E161825431B9500D65B62 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
+		031E161D25431BA000D65B62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				031E15E925431B6D00D65B62 /* Assets.xcassets */,
 				031E15EB25431B6D00D65B62 /* LaunchScreen.storyboard */,
 				031E15EE25431B6D00D65B62 /* Info.plist */,
+				031E161325431B7C00D65B62 /* LoginScreenViewController.swift */,
+				031E161825431B9500D65B62 /* RegisterScreenViewController.swift */,
+				031E161D25431BA000D65B62 /* HomeViewController.swift */,
 			);
 			path = "Login-Attempt-2";
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 			files = (
 				031E15E525431B6B00D65B62 /* ViewController.swift in Sources */,
 				031E15E125431B6B00D65B62 /* AppDelegate.swift in Sources */,
+				031E161425431B7C00D65B62 /* LoginScreenViewController.swift in Sources */,
 				031E15E325431B6B00D65B62 /* SceneDelegate.swift in Sources */,
+				031E161925431B9500D65B62 /* RegisterScreenViewController.swift in Sources */,
+				031E161E25431BA000D65B62 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
