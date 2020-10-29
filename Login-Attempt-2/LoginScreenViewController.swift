@@ -6,13 +6,25 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class LoginScreenViewController: UIViewController {
 
+    @IBOutlet weak var EmailTextField: UITextField!
+    @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var LogInButton: UIButton!
+    @IBOutlet weak var ErrorMessageLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func initalize(){
+        ErrorMessageLabel.alpha = 0
     }
     
 
@@ -25,5 +37,36 @@ class LoginScreenViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func validation()->String?{
+        //Ensure no text field is blank
+        if EmailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+            return "Fill in email field"
+        }else if PasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {"Fill in password field"}
+        
+        return nil
+    }
 
+    @IBAction func LogInButtonTapped(_ sender: Any) {
+        
+        // We need to make sure the fields are not blank
+        let error = validation()
+        // If error != nil => Errors occureed and validation failed.
+        if error != nil{
+            // We can force unwrap error because we know it is not empy
+            ErrorMessageLabel.text = error!
+            ErrorMessageLabel.alpha = 1 // Make label visible
+        }else{
+        // We need to make sure the credentials match a user the in the database
+            Auth.auth().signIn(withEmail: EmailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines), password: PasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)) { (result, error) in
+                if error != nil{
+                    self.ErrorMessageLabel.text = "Error in log in"
+                    self.ErrorMessageLabel.alpha = 1
+                }else{
+                    print("Success")
+                }
+            }
+        }
+        
+    }
 }

@@ -1,0 +1,6 @@
+framework module Pods_Login_Attempt_2_Login_Attempt_2UITests {
+  umbrella header "Pods-Login-Attempt-2-Login-Attempt-2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
