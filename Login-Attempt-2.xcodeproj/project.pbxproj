@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		031E161925431B9500D65B62 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161825431B9500D65B62 /* RegisterScreenViewController.swift */; };
 		031E161E25431BA000D65B62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161D25431BA000D65B62 /* HomeViewController.swift */; };
 		037A083A2547203E00BE0B9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 037A08392547203E00BE0B9D /* GoogleService-Info.plist */; };
+		03FD669E254F26AF00263E2A /* IMG_0395.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03FD669D254F26AF00263E2A /* IMG_0395.mp4 */; };
+		03FD669F254F26AF00263E2A /* IMG_0395.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03FD669D254F26AF00263E2A /* IMG_0395.mp4 */; };
+		03FD66A0254F26AF00263E2A /* IMG_0395.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03FD669D254F26AF00263E2A /* IMG_0395.mp4 */; };
 		3DD1157150626949BC697F73 /* Pods_Login_Attempt_2_Login_Attempt_2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23395BA35D69FFD3E0D4E454 /* Pods_Login_Attempt_2_Login_Attempt_2UITests.framework */; };
 		C1CC616CE10E3AFEFCE666FF /* Pods_Login_Attempt_2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8960ED9C16EEBAB3EDF34690 /* Pods_Login_Attempt_2Tests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +63,7 @@
 		031E161825431B9500D65B62 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 		031E161D25431BA000D65B62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		037A08392547203E00BE0B9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03FD669D254F26AF00263E2A /* IMG_0395.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0395.mp4; sourceTree = "<group>"; };
 		04C4D5C62E983DD0EE13D4AE /* Pods-Login-Attempt-2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login-Attempt-2.release.xcconfig"; path = "Target Support Files/Pods-Login-Attempt-2/Pods-Login-Attempt-2.release.xcconfig"; sourceTree = "<group>"; };
 		23395BA35D69FFD3E0D4E454 /* Pods_Login_Attempt_2_Login_Attempt_2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Attempt_2_Login_Attempt_2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0EC70192DD238EE71586EF /* Pods_Login_Attempt_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Attempt_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +128,7 @@
 		031E15DF25431B6B00D65B62 /* Login-Attempt-2 */ = {
 			isa = PBXGroup;
 			children = (
+				03FD669D254F26AF00263E2A /* IMG_0395.mp4 */,
 				031E15E025431B6B00D65B62 /* AppDelegate.swift */,
 				031E15E225431B6B00D65B62 /* SceneDelegate.swift */,
 				031E15E425431B6B00D65B62 /* ViewController.swift */,
@@ -167,7 +172,6 @@
 				63CCA74DBDB46437FDC99402 /* Pods-Login-Attempt-2Tests.debug.xcconfig */,
 				EB66CF7F111D72088D066D73 /* Pods-Login-Attempt-2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -292,6 +296,7 @@
 				031E15ED25431B6D00D65B62 /* LaunchScreen.storyboard in Resources */,
 				037A083A2547203E00BE0B9D /* GoogleService-Info.plist in Resources */,
 				031E15EA25431B6D00D65B62 /* Assets.xcassets in Resources */,
+				03FD669E254F26AF00263E2A /* IMG_0395.mp4 in Resources */,
 				031E15E825431B6B00D65B62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FD669F254F26AF00263E2A /* IMG_0395.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FD66A0254F26AF00263E2A /* IMG_0395.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
