@@ -86,7 +86,7 @@ class RegisterScreenViewController: UIViewController {
                     self.ErrorLabel.alpha = 1 // Make label visible
                 }else{
                     // Testing else Statement, will need to delete later
-                    self.ErrorLabel.text = "Register in successful!"
+                    self.ErrorLabel.text = "Register successful!"
                     self.ErrorLabel.alpha = 1
                 }
             }
