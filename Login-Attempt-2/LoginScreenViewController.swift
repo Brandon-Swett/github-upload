@@ -63,7 +63,8 @@ class LoginScreenViewController: UIViewController {
                     self.ErrorMessageLabel.text = "Error in log in"
                     self.ErrorMessageLabel.alpha = 1
                 }else{
-                    print("Success")
+                    self.ErrorMessageLabel.text = "Log in successful!"
+                    self.ErrorMessageLabel.alpha = 1
                 }
             }
         }

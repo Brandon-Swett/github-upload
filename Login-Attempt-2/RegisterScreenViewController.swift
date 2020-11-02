@@ -84,6 +84,10 @@ class RegisterScreenViewController: UIViewController {
                 if error != nil{
                     self.ErrorLabel.text = "Error creating user"
                     self.ErrorLabel.alpha = 1 // Make label visible
+                }else{
+                    // Testing else Statement, will need to delete later
+                    self.ErrorLabel.text = "Register in successful!"
+                    self.ErrorLabel.alpha = 1
                 }
             }
         }
