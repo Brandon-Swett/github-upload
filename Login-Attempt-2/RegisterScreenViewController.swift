@@ -7,9 +7,10 @@
 
 import UIKit
 import Firebase
+import AVFoundation
 
 class RegisterScreenViewController: UIViewController {
-
+    var player: AVPlayer?
     @IBOutlet weak var EmailAdressTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var SignUpButton: UIButton!
@@ -17,10 +18,27 @@ class RegisterScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playBackgroundVideo()
         ErrorLabel.alpha = 0 // Make error label disapear.
         }
     
-
+    func playBackgroundVideo(){
+        let path = Bundle.main.path(forResource: "IMG_0395", ofType: ".mp4")
+        player = AVPlayer(url: URL(fileURLWithPath: path!))
+        player!.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.view.frame
+        playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        self.view.layer.insertSublayer(playerLayer, at: 0)
+        NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
+        player!.seek(to: CMTime.zero)
+        player!.play()
+        self.player?.isMuted = true
+    }
+    
+    @objc func playerItemDidReachEnd(){
+        player!.seek(to: CMTime.zero)
+    }
     /*
     // MARK: - Navigation
 

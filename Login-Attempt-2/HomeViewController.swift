@@ -10,10 +10,18 @@ import AVFoundation
 
 class HomeViewController: UIViewController {
     var player: AVPlayer?
+    @IBOutlet weak var logButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        playBackgroundVideo()
         // Do any additional setup after loading the view.
+        playBackgroundVideo()
+        // Styling the textFields to make them easier to read
+        logButton.layer.borderColor = UIColor.white.cgColor
+        registerButton.layer.borderColor = UIColor.white.cgColor
+        
+        logButton.layer.borderWidth = 1.0
+        registerButton.layer.borderWidth = 1.0
     }
     
     func playBackgroundVideo(){
