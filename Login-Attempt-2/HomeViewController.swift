@@ -17,11 +17,13 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         playBackgroundVideo()
         // Styling the textFields to make them easier to read
-        logButton.layer.borderColor = UIColor.white.cgColor
-        registerButton.layer.borderColor = UIColor.white.cgColor
         
-        logButton.layer.borderWidth = 1.0
-        registerButton.layer.borderWidth = 1.0
+        //logButton.layer.borderColor = UIColor.white.cgColor
+        //registerButton.layer.borderColor = UIColor.white.cgColor
+        
+        //logButton.layer.borderWidth = 1.0
+        
+        //registerButton.layer.borderWidth = 1.0
     }
     
     func playBackgroundVideo(){
