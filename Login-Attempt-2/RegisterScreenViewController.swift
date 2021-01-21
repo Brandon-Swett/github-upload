@@ -7,10 +7,8 @@
 
 import UIKit
 import Firebase
-import AVFoundation
 
 class RegisterScreenViewController: UIViewController {
-    var player: AVPlayer?
     @IBOutlet weak var EmailAdressTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var SignUpButton: UIButton!
@@ -18,27 +16,12 @@ class RegisterScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playBackgroundVideo()
-        ErrorLabel.alpha = 0 // Make error label disapear.
+        //playBackgroundVideo()
+        styleTextField(EmailAdressTextField)
+        styleTextField(PasswordTextField)
+        styleButton(SignUpButton)
         }
     
-    func playBackgroundVideo(){
-        let path = Bundle.main.path(forResource: "IMG_0395", ofType: ".mp4")
-        player = AVPlayer(url: URL(fileURLWithPath: path!))
-        player!.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = self.view.frame
-        playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        self.view.layer.insertSublayer(playerLayer, at: 0)
-        NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
-        player!.seek(to: CMTime.zero)
-        player!.play()
-        self.player?.isMuted = true
-    }
-    
-    @objc func playerItemDidReachEnd(){
-        player!.seek(to: CMTime.zero)
-    }
     /*
     // MARK: - Navigation
 
@@ -55,6 +38,7 @@ class RegisterScreenViewController: UIViewController {
         // One alphabet character at least
         // One "Special Character" : (!@#$%&*) at least
     // Code found on: https://iosdevcenters.blogspot.com/2017/06/password-validation-in-swift-30.html
+    
     func passwordValid(_ password: String) -> Bool{
         let testPassword = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return testPassword.evaluate(with: password)
@@ -90,8 +74,9 @@ class RegisterScreenViewController: UIViewController {
         // If error != nil => Errors occureed and validation failed.
         if error != nil{
             // We can force unwrap error because we know it is not empy
-            ErrorLabel.text = error!
-            ErrorLabel.alpha = 1 // Make label visible
+            showAlert(error!)
+//            ErrorLabel.text = error!
+//            ErrorLabel.alpha = 1 // Make label visible
         }
         // if error == nil we know user successfully entered correct and valid information
         // Need to add their account to authentication list. 
@@ -100,17 +85,30 @@ class RegisterScreenViewController: UIViewController {
                     
                 // There was an error if this condition was met
                 if error != nil{
-                    self.ErrorLabel.text = "Error creating user"
-                    self.ErrorLabel.alpha = 1 // Make label visible
+                    self.showAlert("Error creating user")
+//                    self.ErrorLabel.text = "Error creating user"
+//                    self.ErrorLabel.alpha = 1 // Make label visible
                 }else{
-                    // Testing else Statement, will need to delete later
-                    self.ErrorLabel.text = "Register successful!"
-                    self.ErrorLabel.alpha = 1
+                    //self.ErrorLabel.text = "Register successful!"
+//                    self.ErrorLabel.alpha = 1
+                    let db = Firestore.firestore()
+                    db.collection("UserPoints").addDocument(data: ["Points" : 0,"UID" : reuslt!.user.uid])
                 }
             }
         }
         
         // Here we want to transition to the next screen. 
+    }
+    
+    func showAlert(_ message : String){
+        
+        let alertController = UIAlertController(title: "Error", message:
+               message, preferredStyle: .alert)
+            
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+
+            
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }

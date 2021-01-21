@@ -20,8 +20,8 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="personal empowerment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwB-pK-KTc">
                                         <rect key="frame" x="0.0" y="0.0" width="386" height="37"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
-                                        <color key="textColor" red="0.31332003689999999" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="LogoRemovedWhiteSpace" translatesAutoresizingMaskIntoConstraints="NO" id="fg7-xr-THv">
@@ -31,7 +31,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.65329458198933876" green="1" blue="0.687227954360489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.65386712768881405" green="1" blue="0.68723750204852552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A4m-gA-Yih" secondAttribute="bottom" constant="239" id="e1D-2h-mUa"/>
                             <constraint firstItem="A4m-gA-Yih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="wVy-zM-Sej"/>

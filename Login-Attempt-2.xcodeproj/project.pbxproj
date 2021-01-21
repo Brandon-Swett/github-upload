@@ -19,7 +19,9 @@
 		031E161425431B7C00D65B62 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161325431B7C00D65B62 /* LoginScreenViewController.swift */; };
 		031E161925431B9500D65B62 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161825431B9500D65B62 /* RegisterScreenViewController.swift */; };
 		031E161E25431BA000D65B62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E161D25431BA000D65B62 /* HomeViewController.swift */; };
+		0371C13C25BA3712003C2E94 /* open_terminal.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0371C13B25BA3712003C2E94 /* open_terminal.sh */; };
 		037A083A2547203E00BE0B9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 037A08392547203E00BE0B9D /* GoogleService-Info.plist */; };
+		0380564F256042D40003DF27 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380564E256042D40003DF27 /* Helper.swift */; };
 		03FD669E254F26AF00263E2A /* IMG_0395.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03FD669D254F26AF00263E2A /* IMG_0395.mp4 */; };
 		03FD669F254F26AF00263E2A /* IMG_0395.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03FD669D254F26AF00263E2A /* IMG_0395.mp4 */; };
 		03FD66A0254F26AF00263E2A /* IMG_0395.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03FD669D254F26AF00263E2A /* IMG_0395.mp4 */; };
@@ -62,7 +64,9 @@
 		031E161325431B7C00D65B62 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		031E161825431B9500D65B62 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
 		031E161D25431BA000D65B62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0371C13B25BA3712003C2E94 /* open_terminal.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = open_terminal.sh; sourceTree = "<group>"; };
 		037A08392547203E00BE0B9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0380564E256042D40003DF27 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		03FD669D254F26AF00263E2A /* IMG_0395.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0395.mp4; sourceTree = "<group>"; };
 		04C4D5C62E983DD0EE13D4AE /* Pods-Login-Attempt-2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login-Attempt-2.release.xcconfig"; path = "Target Support Files/Pods-Login-Attempt-2/Pods-Login-Attempt-2.release.xcconfig"; sourceTree = "<group>"; };
 		23395BA35D69FFD3E0D4E454 /* Pods_Login_Attempt_2_Login_Attempt_2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Attempt_2_Login_Attempt_2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,7 @@
 		031E15DF25431B6B00D65B62 /* Login-Attempt-2 */ = {
 			isa = PBXGroup;
 			children = (
+				0371C13B25BA3712003C2E94 /* open_terminal.sh */,
 				03FD669D254F26AF00263E2A /* IMG_0395.mp4 */,
 				031E15E025431B6B00D65B62 /* AppDelegate.swift */,
 				031E15E225431B6B00D65B62 /* SceneDelegate.swift */,
@@ -140,6 +145,7 @@
 				031E161325431B7C00D65B62 /* LoginScreenViewController.swift */,
 				031E161825431B9500D65B62 /* RegisterScreenViewController.swift */,
 				031E161D25431BA000D65B62 /* HomeViewController.swift */,
+				0380564E256042D40003DF27 /* Helper.swift */,
 			);
 			path = "Login-Attempt-2";
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			files = (
 				031E15ED25431B6D00D65B62 /* LaunchScreen.storyboard in Resources */,
 				037A083A2547203E00BE0B9D /* GoogleService-Info.plist in Resources */,
+				0371C13C25BA3712003C2E94 /* open_terminal.sh in Resources */,
 				031E15EA25431B6D00D65B62 /* Assets.xcassets in Resources */,
 				03FD669E254F26AF00263E2A /* IMG_0395.mp4 in Resources */,
 				031E15E825431B6B00D65B62 /* Main.storyboard in Resources */,
@@ -428,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				031E15E525431B6B00D65B62 /* ViewController.swift in Sources */,
+				0380564F256042D40003DF27 /* Helper.swift in Sources */,
 				031E15E125431B6B00D65B62 /* AppDelegate.swift in Sources */,
 				031E161425431B7C00D65B62 /* LoginScreenViewController.swift in Sources */,
 				031E15E325431B6B00D65B62 /* SceneDelegate.swift in Sources */,
